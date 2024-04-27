@@ -56,4 +56,13 @@ public class ProductService {
                 .category(product.getCategoryId().getName())
                 .build();
     }
+
+    public ProductResponse getProductById(int id) {
+        Product product = productRepository.findById(id).orElse(null);
+        return ProductResponse.builder()
+                .name(product.getProductName())
+                .price(product.getPrice())
+                .description(product.getProductDescription())
+                .build();
+    }
 }

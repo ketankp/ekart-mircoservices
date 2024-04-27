@@ -16,7 +16,8 @@
 	<modules>
 		<module>product-service</module>
 		<module>discovery-server</module>
-	</modules>
+        <module>order-service</module>
+    </modules>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.1</spring-cloud.version>
